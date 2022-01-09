@@ -39,7 +39,7 @@ public class TestFile {
                                           String searchText, int returnColumnText) throws Exception {
         String exeptedText = null;
         try {
-            WebElement cell = table.findElement(By.xpath(configFileReader.cell()));
+            WebElement cell = table.findElement(By.xpath("//table/tbody/tr/td["+returnColumnText+"]"));
             exeptedText = cell.getText();
         }
         catch (NoSuchElementException e){
