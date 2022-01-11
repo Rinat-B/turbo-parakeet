@@ -25,6 +25,7 @@ public class TestFile {
            WebElement table1=driver.findElement(By.id(configFileReader.id()));
            Boolean response = verifyTableCellTextByXpath(table1, configFileReader.getSearchColumn(),
                    configFileReader.searchText(), configFileReader.returnColumnText(), configFileReader.exeptedText());
+            System.out.println(response);
        }
        catch (WebDriverException e) {
             System.out.println("You have probably closed your browser.");
