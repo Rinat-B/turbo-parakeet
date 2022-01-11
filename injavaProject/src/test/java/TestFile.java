@@ -43,7 +43,7 @@ public class TestFile {
             WebElement cell = table.findElement(By.xpath("//table/tbody/tr/td["+returnColumnText+"]"));
             exeptedText = cell.getText();
         }
-        catch (NoSuchElementException e){
+        catch (org.openqa.selenium.NoSuchElementException e){
             System.out.println("You are trying to access a non-existent cell. Check the values you entered.");
         }
 
